@@ -23,11 +23,10 @@ public class PayrollCalcApp {
             FileWriter writer = new FileWriter("src/main/resources/" + write);
             BufferedReader theFile = new BufferedReader(fileReader);
             BufferedWriter bwriter = new BufferedWriter(writer);
-
+            //similar to eating line from int to string
+            theFile.readLine();
             //holds first line
             String line;
-            //reads first line (i think)
-            theFile.readLine();
 
             bwriter.write("id|name|gross pay \n");
 
